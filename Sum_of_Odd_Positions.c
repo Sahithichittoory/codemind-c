@@ -5,11 +5,11 @@ int main()
     scanf("%d",&N);
     for(i=1;i<=N;i++)
     {
-       scanf("%d",&a[i]);
-       if(i%2==0)
-       {
-           sum=sum+a[i];
-       }
+        scanf("%d",&a[i]);
+        if(i%2==0)
+        {
+            sum=sum+a[i];
+        }
     }
     printf("%d",sum);
 }
