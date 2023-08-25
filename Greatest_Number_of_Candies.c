@@ -1,25 +1,25 @@
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-    int i,n,m,l;
+    int n,i,max=0;
     scanf("%d",&n);
-    int ar[n];
+    int a[n];
     for(i=0;i<n;i++)
     {
-        scanf("%d",&ar[i]);
+        scanf("%d",&a[i]);
     }
-    scanf("%d",&l);
-    m=ar[0];
     for(i=0;i<n;i++)
     {
-        if(ar[i]>m)
+        if(a[i]>max)
         {
-            m=ar[i];
+            max=a[i];
         }
     }
+    int m;
+    scanf("%d",&m);
     for(i=0;i<n;i++)
     {
-        if(ar[i]+l>=m)
+        if(a[i]+m>=max)
         {
             printf("True ");
         }
