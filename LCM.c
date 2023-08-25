@@ -1,16 +1,15 @@
 #include<stdio.h>
-int main ()
+int main()
 {
-    int a,b;
-    scanf("%d%d",&a,&b);
-    int lcm=(a>b)?a:b;
+    int i=0,n,m;
+    scanf("%d%d",&n,&m);
     while(1)
     {
-        if (lcm%a==0 && lcm%b==0)
+        i++;
+        if(n*i%m==0)
         {
-            printf("%d",lcm);
             break;
         }
-        ++lcm;
     }
+    printf("%d",n*i);
 }
